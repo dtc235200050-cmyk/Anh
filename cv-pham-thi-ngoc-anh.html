@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CV - Phạm Thị Ngọc Ánh</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #1d2b3a;
+      --muted: #586779;
+      --accent: #087e83;
+      --line: #dce5e9;
+      --tint: #edf7f6;
+      --paper: #fff;
+      --canvas: #edf2f4;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 32px 16px;
+      background: var(--canvas);
+      color: var(--ink);
+      font-family: "Segoe UI", Arial, sans-serif;
+      font-size: 14px;
+      line-height: 1.55;
+    }
+
+    .resume {
+      width: min(100%, 800px);
+      min-height: 1123px;
+      margin: 0 auto;
+      padding: 48px 56px;
+      background: var(--paper);
+      box-shadow: 0 12px 40px rgb(29 43 58 / 12%);
+    }
+
+    header {
+      padding-bottom: 25px;
+      border-bottom: 2px solid var(--accent);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 34px;
+      font-weight: 700;
+      letter-spacing: 0.3px;
+      line-height: 1.2;
+    }
+
+    .role {
+      margin: 8px 0 17px;
+      color: var(--accent);
+      font-size: 17px;
+      font-weight: 600;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+    }
+
+    .contact {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px 20px;
+      color: var(--muted);
+    }
+
+    .contact span {
+      white-space: nowrap;
+    }
+
+    section {
+      margin-top: 22px;
+    }
+
+    h2 {
+      margin: 0 0 12px;
+      color: var(--accent);
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 1.1px;
+      text-transform: uppercase;
+    }
+
+    p {
+      margin: 0;
+    }
+
+    .intro {
+      color: #334456;
+      font-size: 15px;
+      line-height: 1.7;
+    }
+
+    .columns {
+      display: grid;
+      grid-template-columns: 1.45fr 1fr;
+      gap: 34px;
+      margin-top: 2px;
+    }
+
+    .columns section {
+      margin-top: 22px;
+    }
+
+    .item + .item {
+      margin-top: 15px;
+    }
+
+    .entry {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      align-items: baseline;
+    }
+
+    .entry strong {
+      font-size: 15px;
+    }
+
+    .meta {
+      color: var(--muted);
+    }
+
+    .school {
+      margin-top: 5px;
+      color: var(--muted);
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .tag {
+      padding: 4px 10px;
+      border: 1px solid #cce2df;
+      border-radius: 16px;
+      background: var(--tint);
+      color: #24545a;
+      font-size: 13px;
+    }
+
+    .note {
+      color: var(--muted);
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 18px;
+    }
+
+    li + li {
+      margin-top: 6px;
+    }
+
+    .focus {
+      padding: 15px 17px;
+      border-left: 3px solid var(--accent);
+      background: var(--tint);
+    }
+
+    .focus h2 {
+      margin-bottom: 8px;
+    }
+
+    .focus p {
+      color: #334456;
+    }
+
+    .focus p + p,
+    .skill-note {
+      margin-top: 8px;
+    }
+
+    .skill-note {
+      color: var(--muted);
+    }
+
+    .footer {
+      margin-top: 24px;
+      padding-top: 12px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 0;
+      }
+
+      .resume {
+        min-height: 100vh;
+        padding: 36px 24px;
+      }
+
+      h1 {
+        font-size: 29px;
+      }
+
+      .columns {
+        grid-template-columns: 1fr;
+        gap: 0;
+      }
+    }
+
+    @page {
+      size: A4;
+      margin: 0;
+    }
+
+    @media print {
+      body {
+        padding: 0;
+        background: var(--paper);
+        print-color-adjust: exact;
+        -webkit-print-color-adjust: exact;
+      }
+
+      .resume {
+        width: 210mm;
+        min-height: auto;
+        margin: 0;
+        padding: 14mm 17mm;
+        box-shadow: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="resume">
+    <header>
+      <h1>Phạm Thị Ngọc Ánh</h1>
+      <p class="role">Ứng tuyển Fresher Tester</p>
+      <div class="contact" aria-label="Thông tin liên hệ">
+        <span>Thành Công, Thái Nguyên</span>
+        <span>0989 733 206</span>
+      </div>
+    </header>
+
+    <section>
+      <h2>Giới thiệu</h2>
+      <p class="intro">
+        Sinh viên năm cuối ngành Công nghệ thông tin tại ICTU, đang định hướng
+        phát triển sự nghiệp trong lĩnh vực kiểm thử phần mềm. Có nền tảng về
+        phát triển ứng dụng với Node.js và React, cùng tinh thần ham học hỏi,
+        chăm chỉ và sẵn sàng tiếp thu quy trình làm việc mới. Mong muốn bắt đầu
+        ở vị trí Fresher Tester để rèn luyện tư duy kiểm thử, đóng góp vào chất
+        lượng sản phẩm và phát triển chuyên môn lâu dài.
+      </p>
+    </section>
+
+    <div class="columns">
+      <div>
+        <section>
+          <h2>Học vấn</h2>
+          <div class="item">
+            <div class="entry">
+              <strong>Đại học Công nghệ thông tin và Truyền thông</strong>
+            </div>
+            <p class="school">ICTU · Ngành Công nghệ thông tin</p>
+            <p class="meta">Sinh viên năm cuối</p>
+          </div>
+        </section>
+
+        <section>
+          <h2>Nền tảng chuyên môn</h2>
+          <div class="item">
+            <strong>Lập trình và phát triển web</strong>
+            <p class="note">Node.js, React</p>
+          </div>
+          <div class="item">
+            <strong>Định hướng kiểm thử</strong>
+            <p class="note">
+              Mong muốn được học và thực hành kiểm thử thủ công, xây dựng test
+              case, ghi nhận lỗi rõ ràng và kiểm tra lại sau khi sửa lỗi.
+            </p>
+          </div>
+        </section>
+
+        <section>
+          <h2>Điểm mạnh</h2>
+          <ul>
+            <li>Ham học hỏi, chủ động tiếp thu kiến thức và công cụ mới.</li>
+            <li>Chăm chỉ, kiên trì khi thực hiện nhiệm vụ được giao.</li>
+          </ul>
+        </section>
+      </div>
+
+      <div>
+        <section>
+          <h2>Kỹ năng</h2>
+          <div class="skills" aria-label="Kỹ năng chuyên môn">
+            <span class="tag">Node.js</span>
+            <span class="tag">React</span>
+            <span class="tag">Tiếng Anh B1</span>
+          </div>
+          <p class="skill-note">
+            Ngoại ngữ: Tiếng Anh, trình độ B1.
+          </p>
+        </section>
+
+        <section>
+          <h2>Kinh nghiệm</h2>
+          <p>
+            Chưa có kinh nghiệm làm việc chính thức. Đang tìm kiếm cơ hội
+            Fresher hoặc thực tập để làm quen với quy trình phát triển và kiểm
+            thử phần mềm trong môi trường thực tế.
+          </p>
+        </section>
+
+        <section class="focus">
+          <h2>Mục tiêu nghề nghiệp</h2>
+          <p>
+            <strong>Trước mắt:</strong> Nắm vững quy trình kiểm thử, cách phân
+            tích yêu cầu, thiết kế test case và báo cáo lỗi dễ hiểu.
+          </p>
+          <p>
+            <strong>Lâu dài:</strong> Phát triển năng lực kiểm thử phần mềm,
+            phối hợp hiệu quả với đội ngũ phát triển và góp phần nâng cao chất
+            lượng sản phẩm.
+          </p>
+        </section>
+      </div>
+    </div>
+
+    <p class="footer">
+      Sẵn sàng học hỏi và bắt đầu với vị trí Fresher Tester hoặc thực tập sinh
+      kiểm thử phần mềm.
+    </p>
+  </main>
+</body>
+</html>
